@@ -1,0 +1,16 @@
+.skipLink {
+  position: fixed;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: var(--z-skip-link);
+  transform: translateY(calc(-100% - var(--space-5)));
+  border-radius: var(--radius-pill);
+  background: var(--color-charcoal);
+  color: var(--color-ivory);
+  padding: var(--space-2) var(--space-4);
+  transition: transform var(--duration-fast) var(--ease-luxury);
+}
+
+.skipLink:focus-visible {
+  transform: translateY(0);
+}

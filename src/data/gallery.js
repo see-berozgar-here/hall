@@ -1,0 +1,33 @@
+export const galleryCategories = [
+  'All',
+  'Weddings',
+  'Reception',
+  'Engagement',
+  'Haldi',
+  'Mehendi',
+  'Sangeet',
+  'Birthday',
+  'Corporate',
+  'Decoration',
+  'Dining',
+  'Rooms',
+  'Exterior',
+  'Drone Views',
+];
+
+export const galleryItems = [
+  { id: 'royal-wedding-mandap', title: 'Royal Wedding Mandap', category: 'Weddings', caption: 'A grand floral mandap arranged for a timeless wedding ceremony.', visual: 'weddingVisual', alt: 'Luxury floral wedding mandap at The Grand Royale' },
+  { id: 'reception-stage-glow', title: 'Reception Stage Glow', category: 'Reception', caption: 'Elegant lighting and gold accents for a premium reception evening.', visual: 'receptionVisual', alt: 'Premium reception stage with warm lighting' },
+  { id: 'engagement-ring-moment', title: 'Ring Ceremony Moment', category: 'Engagement', caption: 'An intimate engagement setup designed for graceful family photographs.', visual: 'engagementVisual', alt: 'Engagement ceremony stage with elegant decor' },
+  { id: 'haldi-courtyard', title: 'Haldi Courtyard', category: 'Haldi', caption: 'A bright haldi celebration space with festive marigold-inspired styling.', visual: 'haldiVisual', alt: 'Haldi celebration decor in a sunny courtyard' },
+  { id: 'mehendi-lounge', title: 'Mehendi Lounge', category: 'Mehendi', caption: 'Colorful seating, soft lighting, and a relaxed lounge mood for mehendi.', visual: 'mehendiVisual', alt: 'Mehendi event lounge with colorful premium seating' },
+  { id: 'sangeet-night', title: 'Sangeet Night', category: 'Sangeet', caption: 'A stage-ready ballroom crafted for music, dance, and family performances.', visual: 'sangeetVisual', alt: 'Luxury sangeet stage with dramatic lighting' },
+  { id: 'birthday-banquet', title: 'Birthday Banquet', category: 'Birthday', caption: 'A polished banquet layout for milestone birthdays and family parties.', visual: 'birthdayVisual', alt: 'Premium birthday party banquet arrangement' },
+  { id: 'corporate-gala', title: 'Corporate Gala', category: 'Corporate', caption: 'Formal event seating with professional hospitality and presentation flow.', visual: 'corporateVisual', alt: 'Corporate gala setup in a luxury banquet venue' },
+  { id: 'floral-entry', title: 'Floral Arrival Arch', category: 'Decoration', caption: 'A statement entry experience with layered florals and warm gold light.', visual: 'decorationVisual', alt: 'Luxury floral entrance arch decoration' },
+  { id: 'imperial-dining', title: 'Imperial Dining Layout', category: 'Dining', caption: 'Curated dining counters and spacious guest movement for premium service.', visual: 'diningVisual', alt: 'Premium dining pavilion buffet arrangement' },
+  { id: 'bridal-suite-calm', title: 'Bridal Suite Calm', category: 'Rooms', caption: 'Private preparation comfort for the bride, family, and photography team.', visual: 'roomsVisual', alt: 'Luxury bridal suite for wedding preparation' },
+  { id: 'grand-exterior', title: 'Grand Exterior Arrival', category: 'Exterior', caption: 'A refined facade and arrival court designed for a five-star first impression.', visual: 'exteriorVisual', alt: 'Luxury wedding venue exterior entrance' },
+  { id: 'drone-lawn-view', title: 'Lawn From Above', category: 'Drone Views', caption: 'A scenic aerial mood showing the scale of the lawn celebration area.', visual: 'droneVisual', alt: 'Aerial drone view of outdoor wedding lawn' },
+  { id: 'garden-phere', title: 'Garden Phera Setup', category: 'Weddings', caption: 'Outdoor wedding rituals staged with greenery, gold details, and calm ambience.', visual: 'gardenWeddingVisual', alt: 'Outdoor garden wedding phera setup' },
+];

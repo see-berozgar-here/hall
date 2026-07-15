@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light;
+
+  --color-burgundy: #5a1425;
+  --color-burgundy-deep: #360914;
+  --color-gold: #d8b46a;
+  --color-gold-dark: #9b742a;
+  --color-forest: #173f35;
+  --color-ivory: #fbf7ef;
+  --color-surface: #ffffff;
+  --color-charcoal: #211c1d;
+  --color-muted: #746c66;
+  --color-soft-grey: #a79f98;
+  --color-border: #ebe2d4;
+  --color-focus: #b8892f;
+
+  --gradient-gold-soft: linear-gradient(135deg, #fff4cf 0%, #d8b46a 46%, #a97b2d 100%);
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.82rem);
+  --text-sm: clamp(0.875rem, 0.85rem + 0.12vw, 0.95rem);
+  --text-md: clamp(1rem, 0.96rem + 0.18vw, 1.08rem);
+  --step-0: clamp(1.1rem, 1.02rem + 0.38vw, 1.32rem);
+  --step-1: clamp(1.25rem, 1.09rem + 0.7vw, 1.72rem);
+  --step-2: clamp(1.55rem, 1.28rem + 1.18vw, 2.35rem);
+  --step-3: clamp(2rem, 1.55rem + 2vw, 3.35rem);
+  --step-4: clamp(2.55rem, 1.82rem + 3.22vw, 4.8rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --section-space: clamp(4rem, 8vw, 8rem);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 18px 54px rgba(54, 9, 20, 0.06);
+  --shadow-soft: 0 24px 70px rgba(54, 9, 20, 0.12);
+
+  --duration-fast: 180ms;
+  --duration-normal: 320ms;
+  --duration-slow: 700ms;
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --z-header: 50;
+  --z-skip-link: 1000;
+}
+
+/* Part 9A luxury refinement tokens */
+:root {
+  --color-burgundy: #541223;
+  --color-burgundy-deep: #2d0710;
+  --color-gold: #d4ad63;
+  --color-gold-dark: #8d6524;
+  --color-ivory: #fcf7ee;
+  --color-surface: #fffdf8;
+  --color-border: #eadfcf;
+  --shadow-card: 0 18px 50px rgba(54, 9, 20, 0.075);
+  --shadow-soft: 0 28px 78px rgba(54, 9, 20, 0.14);
+  --radius-xl: 1.9rem;
+  --section-space: clamp(4.8rem, 8.4vw, 8.75rem);
+}

@@ -1,0 +1,30 @@
+export const SITE = Object.freeze({
+  name: 'The Grand Royale',
+  fullName: 'The Grand Royale – Luxury Wedding & Banquet Venue',
+  tagline: 'Luxury celebrations, curated with royal hospitality.',
+  description:
+    'The Grand Royale is a premium wedding and banquet venue offering luxury banquet halls, garden lawns, decoration themes, catering support, packages, and venue visit booking.',
+  url: 'https://thegrandroyale.example.com',
+  phone: '+91 98765 43210',
+  whatsapp: '+919876543210',
+  email: 'bookings@grandroyale.example',
+  address: 'Premium Wedding District, India',
+  city: 'Greater Noida',
+  state: 'Uttar Pradesh',
+  postalCode: '201310',
+  country: 'IN',
+  serviceArea: ['Greater Noida', 'Noida', 'Delhi NCR', 'Ghaziabad'],
+  priceRange: '₹₹₹',
+  openingHours: ['Mo-Su 10:00-21:00'],
+  coordinates: {
+    latitude: 28.4744,
+    longitude: 77.504,
+  },
+  ogImage: '/images/hero-fallback.svg',
+  socialLinks: [
+    'https://www.instagram.com/',
+    'https://www.facebook.com/',
+    'https://www.youtube.com/',
+    'https://www.google.com/search?q=The+Grand+Royale+wedding+venue',
+  ],
+});

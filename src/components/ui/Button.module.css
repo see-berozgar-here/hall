@@ -1,0 +1,129 @@
+.button {
+  --button-bg: transparent;
+  --button-color: var(--color-charcoal);
+  --button-border: transparent;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 1px solid var(--button-border);
+  border-radius: var(--radius-pill);
+  background: var(--button-bg);
+  color: var(--button-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-luxury), box-shadow var(--duration-fast), background var(--duration-fast), color var(--duration-fast);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-gold) 55%, transparent);
+  outline-offset: 3px;
+}
+
+.button:disabled,
+.loading {
+  cursor: not-allowed;
+  opacity: 0.66;
+}
+
+.primary {
+  --button-bg: var(--color-gold);
+  --button-color: var(--color-burgundy);
+  --button-border: color-mix(in srgb, var(--color-gold) 72%, var(--color-charcoal));
+}
+
+.secondary {
+  --button-bg: transparent;
+  --button-color: var(--color-burgundy);
+  --button-border: color-mix(in srgb, var(--color-burgundy) 28%, var(--color-border));
+}
+
+.ghost {
+  --button-bg: var(--color-surface);
+  --button-color: var(--color-charcoal);
+  --button-border: var(--color-border);
+}
+
+.text {
+  --button-bg: transparent;
+  --button-color: var(--color-burgundy);
+  padding-inline: 0;
+}
+
+.sm { padding: 0 var(--space-4); }
+.md { padding: 0 var(--space-5); }
+.lg { min-height: 52px; padding: 0 var(--space-7); }
+
+/* Part 9A CTA refinement */
+.button {
+  min-height: 46px;
+  letter-spacing: .035em;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+}
+.button span { position: relative; z-index: 1; }
+.primary {
+  --button-bg: linear-gradient(135deg, #f3d88f 0%, var(--color-gold) 48%, #b9852d 100%);
+  box-shadow: 0 14px 34px rgba(155, 116, 42, .22), inset 0 1px 0 rgba(255,255,255,.55);
+}
+.secondary { background: rgba(255,255,255,.36); backdrop-filter: blur(14px); }
+.ghost { background: rgba(255,255,255,.72); backdrop-filter: blur(14px); }
+.button:hover { transform: translateY(-2px); box-shadow: 0 20px 48px rgba(54, 9, 20, .15); }
+.button:active { transform: translateY(0); }
+
+/* Part 9B — consistent luxury press, loading and focus feedback */
+.button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at var(--button-x, 50%) var(--button-y, 50%), rgba(255,255,255,.36), transparent 34%);
+  opacity: 0;
+  transform: scale(.92);
+  transition: opacity var(--duration-fast), transform var(--duration-normal) var(--ease-luxury);
+}
+
+.button:hover::before,
+.button:focus-visible::before {
+  opacity: .72;
+  transform: scale(1.15);
+}
+
+.button:active {
+  transform: translateY(1px) scale(.985);
+}
+
+.loading {
+  padding-inline-end: calc(var(--space-5) + 1.4rem);
+  position: relative;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  right: var(--space-4);
+  width: .9rem;
+  height: .9rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: buttonSpin 780ms linear infinite;
+}
+
+@keyframes buttonSpin { to { transform: rotate(360deg); } }
